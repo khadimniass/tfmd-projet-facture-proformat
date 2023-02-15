@@ -14,15 +14,15 @@
 <!--*******************
     Preloader end
 ********************-->
-@extends('layouts.nav-header')
-@extends('layouts.sidebar')
+@extends('layouts.partials.nav-header')
+@extends('layouts.partials.sidebar')
 <div class="card shadow mt-4 container">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">All Users</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered text-center" id="dataTable" >
+            <table class="table table-bordered text-center" id="dataTable">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -39,10 +39,19 @@
                         <td>{{ $user->telephone }}</td>
                         <td>
                             <div class="dropdown">
-                                <button type="button" class="btn btn-primary light sharp" data-toggle="dropdown" aria-expanded="false">
-                                    <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                <button type="button" class="btn btn-primary light sharp" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                            <circle fill="#000000" cx="5" cy="12" r="2"></circle>
+                                            <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                                            <circle fill="#000000" cx="19" cy="12" r="2"></circle>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 33px, 0px);">
+                                <div class="dropdown-menu" x-placement="bottom-start"
+                                     style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 33px, 0px);">
                                     <a class="dropdown-item" href="#">
                                         <i class="fa fa-pencil"></i>
                                         Edit

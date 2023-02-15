@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="copyright">
-        <p>Copyright © Designed &amp; Developed by <a href="http://dexignlab.com/" target="_blank">DexignLab</a> 2021</p>
+        <p>Copyright &copy; Developed by <a href="http://khadimniass.me" target="_blank">Khadim NIASS</a> 2023 &boxh; {{date('Y')}}</p>
     </div>
 </div>
 
@@ -30,3 +30,5 @@
 <!-- Svganimation scripts -->
 <script src="{{URL::asset('mota-admin/vendor/svganimation/vivus.min.js')}}"></script>
 <script src="{{URL::asset('mota-admin/vendor/svganimation/svg.animation.js')}}"></script>
+<script src="{{URL::asset('sweetalert2/sweetalert2.all.min.js')}}"></script>
+

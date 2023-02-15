@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\FactureController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,11 +27,13 @@ Route::get('/dashboard', function () {
 
 Route::get('home',function (){
    return view('home');
-});
+})->name('home');
 
 Route::get('logout',[AuthenticatedSessionController::class,'destroy'])->name('logout');
+Route::get('facture/create',[FactureController::class,'create'])->name('create');
+Route::post('/savefacure',[FactureController::class,'store'])->name('save');
 
 Route::get('profil',[UserController::class,'profil'])->name('profil');
-Route::get('liste-users',[UserController::class,'index'])->name('liste-users');
+Route::get('liste-users',[UserController::class,'index'])->name('users');
 
 require __DIR__.'/auth.php';

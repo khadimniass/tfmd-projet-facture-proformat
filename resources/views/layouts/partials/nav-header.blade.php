@@ -2,17 +2,11 @@
         Nav header start
     ***********************************-->
 <div class="nav-header container">
-    <a href="" class="brand-logo">
+    <a href="{{route('home')}}" class="brand-logo">
         <img class="logo-abbr" src="{{URL::asset('mota-admin/images/logo-white.png')}}" alt="1">
         <img class="logo-compact" src="{{URL::asset('mota-admin/images/logo-text.png')}}" alt="2">
         <img class="brand-title" src="{{URL::asset('mota-admin/images/logo-text.png')}}" alt="3">
     </a>
-
-    <div class="nav-control">
-        <div class="hamburger">
-            <span class="line"></span><span class="line"></span><span class="line"></span>
-        </div>
-    </div>
 </div>
 <!--**********************************
     Nav header end
